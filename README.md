@@ -54,3 +54,15 @@ cd ~/.vim/bundle/YouCompleteMe && python ./install.py
 ----
 Reference:
 https://github.com/chusiang/vimrc
+
+## 4. Install Powerline font
+```ruby
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+```
