@@ -1,10 +1,14 @@
 ## 0. Install Vim
-```console
-yum install cscope ncurses ncurses-devel ncurses-libs ncurses-base python-libs ruby-devel python34 python34-pip python-devel python3-devel python34-devel
+```ruby
+
+sudo yum install cscope ncurses ncurses-devel ncurses-libs ncurses-base python-libs ruby-devel python34 python34-pip python-devel python3-devel python34-devel
 
 git clone git@github.com:vim/vim.git
+
 cd vim
+
 make distclean
+
 ./configure \
 --enable-multibyte \
 --enable-perlinterp \
@@ -21,7 +25,7 @@ make distclean
 --enable-largefile \
 --disable-netbeans
 
-make
+make -j 20
 sudo make install
 ```
 ----
